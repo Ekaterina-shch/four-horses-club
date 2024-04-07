@@ -1,0 +1,94 @@
+.image-group__main {
+  position: absolute;
+  width: 100%;
+}
+.image-group__main .container {
+  position: relative;
+}
+.image-group__hero {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.image-group__hero .container {
+  position: relative;
+  height: 100%;
+}
+.image-group__hero * {
+  position: absolute;
+}
+.image-group__hero--bg-elem-circle {
+  position: absolute;
+  top: -64px;
+  right: -26px;
+}
+.image-group__hero--bg-elem-circle .svg-text {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: rotate 30s infinite linear;
+}
+
+.image-group__hero--bg-elem-1 {
+  top: 270px;
+  right: 506px;
+  animation: translateY-el-1 3s infinite linear;
+}
+
+.image-group__hero--bg-elem-2 {
+  top: 165px;
+  right: 159px;
+  animation: rotate-el-2 4s infinite linear;
+}
+.image-group__hero--bg-elem-city {
+  bottom: 60px;
+  right: -141px;
+}
+
+.image-group__hero--bg-elem-3 {
+  bottom: 8px;
+  right: 333px;
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: swing-el-3 2s infinite linear;
+  animation-timing-function: steps(1, start);
+}
+.image-group__hero--bg-elem-4 {
+  bottom: 79px;
+  right: 44px;
+}
+
+@media screen and (max-width: 768px) {
+  .image-group__hero--bg-elem-circle {
+    width: 349px;
+    height: 349px;
+    top: auto;
+    bottom: 80px;
+    right: 22px;
+  }
+  .image-group__hero--bg-elem-1 {
+    width: 60px;
+    top: auto;
+    bottom: 148px;
+    right: 253px;
+  }
+  .image-group__hero--bg-elem-2 {
+    width: 61px;
+    top: auto;
+    bottom: 202px;
+    right: 86px;
+    transform: rotate(8deg);
+  }
+  .image-group__hero--bg-elem-city {
+    width: 885px;
+    bottom: 40px;
+    right: -109px;
+  }
+  .image-group__hero--bg-elem-3 {
+    width: 98px;
+    bottom: 17px;
+    right: 131px;
+  }
+  .image-group__hero--bg-elem-4 {
+    display: none;
+  }
+}
